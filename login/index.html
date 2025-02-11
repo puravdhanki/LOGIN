@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="login-card">
+      <div class="header">
+        <i data-lucide="school" class="logo"></i>
+        <h1>Welcome to EduMosaic</h1>
+        <p>Login in to your account</p>
+      </div>
+
+      <form id="loginForm" class="form">
+        <div class="form-group">
+          <i data-lucide="user-circle" class="input-icon"></i>
+          <select id="role" required>
+            <option value="">Select Role</option>
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="admin">Admin</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <i data-lucide="building-2" class="input-icon"></i>
+          <select id="department" required>
+            <option value="">Select Department</option>
+            <option value="IT">IT</option>
+            <option value="CS">CS</option>
+            <option value="BT">BT</option>
+            <option value="BAMMC">BAMMC</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <i data-lucide="mail" class="input-icon"></i>
+          <input type="email" id="email" placeholder="Email address" required>
+        </div>
+
+        <div class="form-group">
+          <i data-lucide="lock" class="input-icon"></i>
+          <input type="password" id="password" placeholder="Password" required>
+        </div>
+
+        <div class="remember-forgot">
+          <label class="remember">
+            <input type="checkbox" id="remember">
+            <span>Remember me</span>
+          </label>
+          <a href="#" class="forgot">Forgot password?</a>
+        </div>
+
+        <!-- <a href="About-us/index.html" class="submit-btn"> Read More</a> -->
+        <button type="submit" class="submit-btn"><a href="/Register/login_db.html"></a>Sign in</button>
+
+        <p class="register">
+          Don't have an account? <a href="reg.html">Register</a>
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
